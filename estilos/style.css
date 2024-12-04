@@ -19,36 +19,103 @@ main {
 }
 
 section {
-    background-color: black;
+    background-color: white;
     position: absolute;
-    height: 450px;
+    height: 515px;
     width: 250px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 20px;
 }
 
 div#imagem {
-    height: 170px;
-    background-image: url(../imagens/foto-lado-login.jpg);
+    height: 200px;
+    background-image: url(../imagens/metal.jpg);
     background-size: cover;
+    background-position: bottom left;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 10px;
 }
 
 div#form {
     background-color: white;
-    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #form > h1 {
     text-align: center;
     padding: 5px;
     font-weight: 700;
+    font-size: 1.7em;
 }
 
 #form > p {
-    font-size: small;
+    font-size: 12px;
+    padding-bottom: 5px;
+    line-height: 15px;
 }
 
-#iemail {
-    height: 30px;
+div.input {
+    background-color: #5F2C82;
+    padding: 2px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+#icone {
+    font-size: 35px;
+    padding-right: 5px;
+    color: white;
+    padding-left: 5px;
+}
+
+.textbox {
+    height: 39px;
+    width: 180px;
+    position: absolute;
+    background-color: #94CFCD;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+    text-indent: 5px;
+}
+
+.textbox:hover {
+    background-color: white;
+}
+
+.submit {
+    width: 230px;
+    border: none;
+    background-color: #53AAA7;
+    color: white;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+input#join:hover {
+    background-color: #2D6462;
+}
+
+a#esqueci {
+    border: 1px solid #2D6462;
+    background-color: white;
+    color: #2D6462;
+    font-size: 0.9em;
+}
+
+a#esqueci:hover {
+    background-color: #6CD3CF;
+}
+
+#letteresqueci {
+    margin-top: 10px;
+    font-size: 15px;
 }
