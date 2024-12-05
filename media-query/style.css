@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/*
+    Typical Device BReakpoints
+    
+    Pequenas Telas: até 600px
+    Celular: de 600px até 768px
+    Tablet: de 768px até 922px
+    Desktop: 992px até 1200px
+    Grandes Telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 922px) {
+    main {
+        background-image: linear-gradient(to bottom, #5F2C82, #4B969B);
+    }
+
+    div#imagem {
+        width: 30%;
+        height: 100%;
+        display: inline-block;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    div#form {
+        width: 60%;
+        height: 270px;
+        transform: translateY(-40px);
+        display: inline-block;
+    }
+
+    section {
+        transition-duration: 0.4s;
+        width: 650px;
+        height: 280px;
+    }
+
+    div.input {
+        width: 420px;
+    }
+
+    .textbox {
+        width: 91%;
+    }
+
+    .submit {
+        width: 420px;
+    }
+
+    #form > h1 {
+        font-size: 1.5em;
+    }
+
+    #form > p {
+        font-size: 13px;
+    }
+}

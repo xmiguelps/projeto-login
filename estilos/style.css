@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-/*
-    Paleta de cores:
-        Gray
-        white
-*/
-
 * {
     margin: 0px;
     padding: 0px;
@@ -27,6 +21,8 @@ section {
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
+    transition-duration: 0.5s;
+    box-shadow: 2px 2px 7px 7px rgba(0, 0, 0, 0.236);
 }
 
 div#imagem {
