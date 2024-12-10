@@ -10,9 +10,15 @@
     Grandes Telas: acima de 1200px
 */
 
-@media screen and (min-width: 768px) and (max-width: 922px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     main {
         background-image: linear-gradient(to bottom, #5F2C82, #4B969B);
+    }
+
+    section {
+        transition-duration: 0.4s;
+        width: 90%;
+        height: 280px;
     }
 
     div#imagem {
@@ -23,28 +29,25 @@
     }
 
     div#form {
-        width: 60%;
+        width: 65%;
         height: 270px;
         transform: translateY(-40px);
         display: inline-block;
-    }
-
-    section {
-        transition-duration: 0.4s;
-        width: 650px;
-        height: 280px;
+        border-radius: 20px;
+        padding: 0px;
+        padding-left: 5px;
     }
 
     div.input {
-        width: 420px;
+        width: 98%;
     }
 
     .textbox {
-        width: 91%;
+        width: 87%;
     }
 
     .submit {
-        width: 420px;
+        width: 98%;
     }
 
     #form > h1 {
@@ -53,5 +56,63 @@
 
     #form > p {
         font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    main {
+        background-image: linear-gradient(to bottom, #5F2C82, #4B969B);
+    }
+
+    section {
+        transition-duration: 0.4s;
+        width: 60em;
+        height: 350px;
+    }
+
+    div#imagem {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        display: inline-block;
+        border-radius: 0px 20px 20px 0px;
+        transform: translateX(480px);
+        width: 50%;
+        height: 351px;
+    }
+
+    div#form {
+        transform: translateY(-350px);
+        width: 48%;
+        height: 270px;
+        display: block;
+        border-radius: 20px;
+        margin-left: 5px;
+        padding: 0px;
+        padding-left: 5px;
+    }
+
+    div.input {
+        width: 98%;
+    }
+
+    .textbox {
+        width: 87.4%;
+    }
+
+    .submit {
+        width: 98%;
+    }
+
+    #form > h1 {
+        font-size: 1.7em;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    #form > p {
+        font-size: 16px;
+        line-height: 25px;
     }
 }
