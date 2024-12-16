@@ -11,7 +11,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box; 
-    /*quando usar o width, ele vai mexer com a borda junto, e não só com oq ta dentro*/
+    /*box-sizing: border-box; que indica que o tamanho agora levará em conta até a borda*/
 }
 
 body, html {
@@ -34,9 +34,16 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden; /*esconde tudo que ta fora da borda de uma certa div*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    transition: width .3s, height .3s; 
+    /* 
+    dica
+        voce pode fazer "animações" com fazendo transição de coisas especificas
+    */
+    
+    transition-timing-function: ease; /*Deixa a transição mais suave*/
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem {
@@ -52,3 +59,89 @@ section#login > div#form {
     display: block;
     padding: 10px;
 }
+
+div#form > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#form > p {
+    font-size: 0.8em;
+}
+
+form > div.campo {
+    background-color: #5f2c82;
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+    border: 2px solid #5f2c82;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+div.campo > input {
+    background-color: #96d4d2;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 2px;
+    transform: translateY(-12px);
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #357471;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: white;
+    border: 1px solid #357471;
+    border-radius: 7px;
+    text-decoration: none;
+    color: #357471;
+}
+
+form > a.botao:hover {
+    background-color: #6cd3cf;
+}
+
+form > a.botao > span {
+    font-size: 0.8em;
+}
+
+/*serve para indentificar um inout em especifico*/
